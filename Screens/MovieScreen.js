@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import { Box, Center, Container } from "native-base"
-import {SelectForm} from '../components/select'
-import {List} from '../components/List'
+import {SelectForm} from '../components/SelectComponent'
+import {List} from '../components/ListComponent'
 
 
 
