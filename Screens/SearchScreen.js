@@ -22,7 +22,6 @@ const optionsArray = [
 export const SearchScreen = ({navigation}) => {
   const [service, setService] = React.useState("multi")
   const [data, setData] = React.useState([])
-  const [emptyDrop, setEmptyDrop] = React.useState(true)
   const [value, setValue] = React.useState("")
   
 
@@ -53,13 +52,13 @@ const handleSubmit = () =>{
          <Box w="90%" mx="auto">
            <HStack space={2}  mt ={2} alignItems="center">
               
-                <FormControl isRequired term={emptyDrop} w="60%" >
+                <FormControl isRequired  w="60%" >
                   <SelectForm
                    optionsArray={optionsArray}
                    service={service}
                    setService = {setService}
                    search={true}
-                   term={emptyDrop}
+                  
                    />
                 </FormControl>
 

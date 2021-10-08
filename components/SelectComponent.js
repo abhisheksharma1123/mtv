@@ -1,11 +1,11 @@
 import  React from 'react'
 import { Container, Text, Heading, NativeBaseProvider, Center, Select, VStack, CheckIcon, FormControl } from 'native-base';
 
-function SelectForm({optionsArray, service, setService, search, term}){
-  let calculate = search && term
+function SelectForm({optionsArray, service, setService, search}){
+  
  return(
         <VStack alignItems="center" space={4} mt="5">
-          <FormControl isRequired isInvalid={calculate}>
+          <FormControl isRequired >
               {search && <FormControl.Label>Choose Search Type</FormControl.Label>}
                     <Select
                       selectedValue={service}
